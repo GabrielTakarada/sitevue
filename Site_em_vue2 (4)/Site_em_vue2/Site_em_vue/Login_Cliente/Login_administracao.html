@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Site_em_vue/Login_Cliente/Imagem_do_WhatsApp_de_2023-05-18_à_s__22.18.54-removebg-preview.png">
+    <link rel="stylesheet" type="text/css" href="Login_administracao.css" media="screen" />
+    <title>Login ADM</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="src/app.js" defer></script>
+</head>
+<body>
+    <selection class="area-Login">
+        <div class="Login">
+            <div>
+                <img src="Imagem_do_WhatsApp_de_2023-05-18_à_s__22.18.54-removebg-preview.png">
+                <h2>Administração</h2>
+            </div>
+            <div id="app">
+                <form id="app-form">
+                    <input type="text" v-model="input_name" placeholder="nome de usuario" autofocus>
+                    <input type="password" placeholder="senha">
+                    <a href="pagina.html" class="enter">
+                        <input type="button" value="Entrar">
+                    </a>Seja Bem-vindo: {{ input_name }}
+                </form>            </div>
+            <p>Não possui uma conta?     <a href="cadastro.html">    Criar conta</a> </p>
+                
+        </div>
+    </selection>
+    
+</body>
+</html>

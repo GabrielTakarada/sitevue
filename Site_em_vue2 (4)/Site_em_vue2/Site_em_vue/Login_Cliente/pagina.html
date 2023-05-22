@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= família= Poppins:wght@300;400;500;600 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pagina.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Site_em_vue/Login_Cliente/Imagem_do_WhatsApp_de_2023-05-18_à_s__22.18.54-removebg-preview.png">
+    <link rel="stylesheet" href="pagina.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Página inicial</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo-img">
+            <img src="/Site_em_vue/Login_Cliente/Imagem_do_WhatsApp_de_2023-05-18_à_s__22.18.54-removebg-preview.png"> <h2 id="logo">Vento Fresco</h2>
+        </div>
+
+        <div class="navigation">
+        <ul class="navegação">
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Avaliações</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+        </div>
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div>
+
+    </header>
+
+
+    <section class="home">
+        <div class="home-img">
+            <img src="/Site_em_vue/Login_Cliente/imagens/Grande1.png" class="one">
+        </div>
+
+        <div class="home-text">
+            <h1>Promoção do Dia</h1>
+            <br>
+            <h2>Ventilador HC300</h2>
+            <h5>MELHOR TECNOLOGIA DO MERCADO</h5>
+            <h3>R$199,99</h3>
+            <br>
+            <a href="#" class="btn">Compre agora</a>
+        </div>
+
+    </section>
+
+    <div class="main">
+        <div class="row">
+        <li><img src="/Site_em_vue/Login_Cliente/imagens/Pequena1-removebg-preview.png" onClick="slider('Grande1.png')"></li>
+    </div>
+
+      <div class="row2">
+      <li><img src="/Site_em_vue/Login_Cliente/imagens/Pequena2-removebg-preview.png" onClick="slider('Grande2.png')"></li>
+    </div>
+
+    
+      <div class="row3">
+      <li><img src="/Site_em_vue/Login_Cliente/imagens/Pequena3-removebg-preview.png" onClick="slider('Grande3.png')"></li>
+    </div>
+  </div>
+
+    
+  <div class="Produtos">
+    <div class="primeiro">
+
+    <div class="texto1">
+      <img src="/Site_em_vue/Login_Cliente/imagens/Img1-removebg-preview.png" class="imagens.1">
+        <h2>Ventilador HF600</h2>
+        <br>
+        <h3>R$240,00</h3>
+        <br>
+        <a href="#" class="btn">Compre agora</a>
+    </div>
+
+    <div class="texto2">
+      <img src="/Site_em_vue/Login_Cliente/imagens/img2-removebg-preview.png" class="imagens.2">
+        <h2>Ventilador HF600</h2>
+        <br>
+        <h3>R$240,00</h3>
+        <br>
+        <a href="#" class="btn">Compre agora</a>
+    </div>
+
+    <div class="texto3">
+      <img src="/Site_em_vue/Login_Cliente/imagens/img3-removebg-preview.png" class="imagens.3">
+        <h2>Ventilador HF600</h2>
+        <br>
+        <h3>R$240,00</h3>
+        <br>
+        <a href="#" class="btn">Compre agora</a>
+    </div>
+
+  </div>
+
+  <div class="segundo">
+    <div class="texto4">
+      <img src="/Site_em_vue/Login_Cliente/imagens/img4-removebg-preview.png" class="imagens.4">
+        <h2>Ventilador HF600</h2>
+        <br>
+        <h3>R$240,00</h3>
+        <br>
+        <a href="#" class="btn">Compre agora</a>
+    </div>
+
+    <div class="texto5">
+      <img src="/Site_em_vue/Login_Cliente/imagens/img5-removebg-preview.png" class="imagens.5">
+        <h2>Ventilador HF600</h2>
+        <br>
+        <h3>R$240,00</h3>
+        <br>
+        <a href="#" class="btn">Compre agora</a>
+    </div>
+
+    <div class="texto6">
+      <img src="/Site_em_vue/Login_Cliente/imagens/img6-removebg-preview.png" class="imagens.6">
+        <h2>Ventilador HF600</h2>
+        <br>
+        <h3>R$240,00</h3>
+        <br>
+        <a href="#" class="btn">Compre agora</a>
+    </div>
+
+  </div>
+
+  </div>
+
+  <script>
+    function slider (anything){
+      document.querySelector('.one') .src = anything;
+    };
+
+    let menu = document.querySelector ('#menu-icon');
+    let navbar = document.querySelector ('.navbar');
+
+    menu.onclick = () => {
+      menu.classList.toggle ('bx-x');
+      navbar.classList.toggle ('open');
+    }
+</script>
+    
+</body>
+</html>
